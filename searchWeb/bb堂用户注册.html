@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bb堂用户注册</title>
+	<link rel="icon" href="images/bb.gif">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bodystyle{
+            background-image: url("images/news4.png");
+            background-size: contain;
+            opacity: 0.2;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+        }
+        form{
+            position: absolute;
+            left: 30%;
+            z-index: 9;
+            text-align: center;
+        }
+        .dock{
+            position: fixed;
+            left: -30%;
+            top: 40%;
+            height: 15%;
+            width: 40%;
+            background-color: rgba(100,222,222,0.5);
+            border-radius:40%;
+            display: flex;
+            z-index: 10;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s linear;
+        }
+        .dock img{
+            width: 80%;
+            height: 90%;
+        }
+        .dock:hover{
+            transform: translateX(78%);
+        }
+        .dock a{
+            flex: 1;
+            transition:all 0.2s linear;
+            /*background-color: #6664;*/
+            height: 100%;
+            width: 100%;
+        }
+        .dock a:hover{
+            transform: scale(1.5);
+        }
+        .bb-logo{
+            width: 20%;
+            height: 20%;
+           position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+        }
+        .bb-logo:hover img{
+            transform: rotateY(180deg);
+        }
+        .bb-logo:hover img:last-child{
+            visibility: visible;
+        }
+        .bb-logo img{
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s linear;
+            transform-style: preserve-3d;
+            position: absolute;
+        }
+        .bb-logo img:first-child{
+            backface-visibility: hidden;
+        }
+        .bb-logo img:last-child{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+<section class="bb-logo">
+    <img src="images/Sign.png" alt="BB图标">
+    <img src="images/logo.png" alt="">
+</section>
+<section class="dock">
+    <a href="index.html"><img src="images/button1.png" alt="button1"></a>
+    <a href="login.html"><img src="images/button4.png" alt="button4"></a>
+    <a href="bb堂用户注册.html"><img src="images/button2.png" alt="button2"></a>
+    <a href="game.html"><img src="images/button3.png" alt="button3"></a>
+</section>
+<div class="bodystyle"></div>
+<form action="http://www.llss.pl/">
+    <h1>BB堂用户注册</h1>
+    <fieldset><legend>用户基本信息</legend>
+        <span style="color: red">*</span>用户名：<input type="text"><span style="color: red; font-size: 1rem">请输入用户名</span><br><br>
+        <span style="color: red">*</span>密&nbsp;&nbsp; 码：<input type="password"><span style="color: red; font-size: 1rem">请输入密码</span>
+        <br><br>
+
+        您的性别是？<input type="radio" name="gender">宅男
+        <input type="radio" name="gender">萌妹
+        <input type="radio" name="gender">扶她
+        <br><br>
+
+        您的爱好有？<input type="checkbox" checked="checked">逼逼
+        <input type="checkbox">打飞机
+        <input type="checkbox">补番
+        <input type="checkbox">网游
+        <input type="checkbox">单机游戏
+        <input type="checkbox">电影
+        <br><br>
+        您的住址？ <select name="" id="">
+            <option value="">---请选择---</option>
+            <option value="">北京</option>
+            <option value="">保定</option>
+            <option value="">火星</option>
+            <option value="">二次元</option>
+        </select>
+        <select name="" id="">
+            <option value="">---请选择---</option>
+            <optgroup label="北京">
+                <option value="">朝阳区</option>
+                <option value="">海淀区</option>
+                <option value="">丰台区</option>
+            </optgroup>
+            <optgroup label="保定">
+                <option value="">竞秀区</option>
+                <option value="">莲池区</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <fieldset><legend>其他信息</legend>
+        您最喜欢的BB堂干部是？
+        <select >
+            <option value="">峰爷</option>
+            <option value="">狗哥</option>
+            <option value="">马儿</option>
+            <option value="">猴儿</option>
+            <option value="">猪娃子</option>
+        </select>
+        <br><br>
+        您的外号？<input type="text" name="nickname">
+        <br><br>
+        您的自我简介：<textarea name="introduce"cols="30" rows="10"></textarea>
+        <br><br>
+        您的照片（需上传一张）：<input type="file" name="photo">
+        <br><br>
+        <input type="image" src="images/reg.jpg">
+        <br><a href="https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E9%A9%AC%E5%92%8C%E7%8C%B4%E5%AD%90&hs=2&pn=0&spn=0&di=202888866841&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=1424820502%2C2156838409&os=4089282311%2C2660353014&simid=3426064954%2C318206290&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=%E9%A9%AC%E5%92%8C%E7%8C%B4%E5%AD%90&objurl=http%3A%2F%2Fimg.qqzhi.com%2Fupload%2Fimg_4_1219009693D1682838489_23.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bqqzit_z%26e3Bv54AzdH3Fw6ptvsjAzdH3F88anm8lAzdH3F&gsm=0&islist=&querylist="><font size="2" color="red">无法注册？请点击这里</font></a>
+
+    </fieldset>
+</form>
+
+</body>
+</html>

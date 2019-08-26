@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="MyCss.css">
+    <link rel="icon" href="img/bb.gif">
+    <title>我的BB学院</title>
+</head>
+<body>
+
+
+<div class="mycontainer">
+    逼逼学院欢迎您！
+</div>
+<div class="top-bar hidden-xs hidden-sm">
+    <div class="container">
+        <div class="row">
+            <div class="top-bar1 col-md-2">
+                <a href="#">
+                    <span class="glyphicon glyphicon-phone"></span>
+                    关注官方app
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                    <img src="img/code.png" alt="bb-App" style="width: 120px">
+                </a>
+            </div>
+            <div class="top-bar2 col-md-4 text-muted">
+                <span class="glyphicon glyphicon-earphone"></span>
+                <span>8888-666-2333（服务时间：12:00-24:00）</span>
+            </div>
+            <div class="top-bar3 col-md-2">
+                <a href="#">校企合作</a>
+                <a href="#">逼逼师</a>
+            </div>
+            <div class="top-bar4 col-md-4">
+                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal2">免费注册</button>
+                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal">立即登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-default navbar-static-top bb-navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bb-nav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/bb-school.png" alt="bbSchool" style="width: 280px;height: 70px">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bb-nav">
+            <ul class="nav navbar-nav">
+                <li id="about_us"><a href="#">关于我们 </a></li>
+                <li id="about_class"><a href="#">课堂介绍</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">热门课程 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">逼逼大法(鸭老师)</a></li>
+                        <li><a href="#">神隐大法(馬老师)</a></li>
+                        <li><a href="#">复读术(猴老师)</a></li>
+                        <li><a href="#">抽馬术(鸭老师&狗老师)</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">其他热门课程</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">师生互动</a></li>
+                <li><a href="#">逼逼大赛</a></li>
+                <li><a href="#">充值中心</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">个人中心 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">我的课程</a></li>
+                        <li><a href="#">我的荣誉</a></li>
+                        <li><a href="#">我的作品</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">设置</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div id="bb-slider" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#bb-slider" data-slide-to="0" class="active"></li>
+        <li data-target="#bb-slider" data-slide-to="1"></li>
+        <li data-target="#bb-slider" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner bb-img" role="listbox">
+        <div class="item active" style="background-image: url('img/slide_01_2000x410.jpg')"
+             data-sm-img="img/slide_01_640x340.jpg">
+        </div>
+        <div class="item" style="background-image: url('img/slide_02_2000x410.jpg')"
+             data-sm-img="img/slide_02_640x340.jpg">
+        </div>
+        <div class="item" style="background-image: url('img/slide_03_2000x410.jpg')"
+             data-sm-img="img/slide_03_640x340.jpg">
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#bb-slider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#bb-slider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="bb-about hidden-xs hidden-sm">
+    <div class="about-top">
+        <h1><strong>关于我们</strong></h1>
+        <img src="img/star.png" alt="star" class="img-responsive">
+    </div>
+    <div class="about-content container">
+        <div class="row">
+            <img src="img/horse.png" class="col-md-2 img-responsive img-circle">
+            <p class="col-md-8 text-muted">
+                逼逼学院是逼逼堂旗下线上教育品牌。成立于2050年06月，集聚强大的逼逼讲师资源，独特的课程服务模式，通过M2O等新型教育方式，真正解决开发者在成长过程中的各种技术瓶颈，帮助学生在逼逼技术上取得成功。<br>
+
+                逼逼学院明星讲师云集，包括叶硕大师，狗哥，面包鸭等十几位专业实战型讲师团队，悉心打造六大综合体系课程，细致且全面，全面助力学生成长。<br>
+
+                逼逼学院课程体系完善，包含逼逼大法、逼逼人工智能、神隐逼逼法、逼语言+区块链、逼逼设计、抽馬术、逼逼运营等系列课程。
+            </p>
+            <img src="img/horse.png" class="col-md-2 img-responsive img-circle">
+        </div>
+    </div>
+</div>
+<div class="bb-tab">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#tab1" aria-controls="home" role="tab"
+                                                  data-toggle="tab">在线逼逼</a></li>
+        <li role="presentation"><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">会员专享</a></li>
+        <li role="presentation"><a href="#tab3" aria-controls="messages" role="tab" data-toggle="tab">优质视频</a></li>
+        <li role="presentation" class="pull-right"><a href="#" aria-controls="settings" role="tab"
+                                                      data-toggle="tab">更多</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+            <div class="bb-tab1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2>热爱逼逼的人们的福音--在线逼逼の平台 &nbsp;&nbsp;&nbsp;<strong class="text-danger">我的逼逼学院</strong></h2>
+                            <br>
+                            <button type="button" class="btn btn-danger btn-lg">立即申请名额</button>
+                            <ol class="breadcrumb">
+                                <li><a href="#">多人逼逼</a></li>
+                                <li><a href="#">在线对喷</a></li>
+                                <li><a href="#">组团抽马</a></li>
+                                <li><a href="#">抽死神隐者</a></li>
+                                <li>
+                                    <button type="button" class="btn btn-info">了解更多</button>
+                                </li>
+                            </ol>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/code.png" alt="code" height="140">
+                                    </a>
+                                </div>
+                                <div class="media-body" style="padding-top: 60px">
+                                    <h5 class="media-heading text-danger">更多资讯请关注逼逼学院</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 hidden-sm hidden-xs">
+                            <img src="img/iphoneX2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="tab2">
+            <div class="bb-tab2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 hidden-xs hidden-sm">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="text-danger">逼逼学院会员</h1>
+                            汇聚名师, 为你呈现逼逼、神隐、抽馬、大家一起抽馬、人工智能抽馬等从零基础到项目实战连载课程内容。专属的会员社群和私人订制服务, 1年365天持续更新课程全部免费学习!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="tab3">
+            <div class="bb-tab3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="text-danger">案例驱动·体系贯穿·全面系统</h1>
+                            <h3>10-15小时的视频 知识点拆分讲解</h3>
+                            <p> 玩转贱馬全抽系列, 玩转人工智能抽馬系列, 玩转Ja馬EE系列, 馬猴戏爷系列</p>
+                            <button class="btn btn-danger btn-lg" type="button">
+                                快来报名吧！<span class="badge" style="color: #0f0f0f">已更新999+视频|1000+人订阅</span>
+                            </button>
+                        </div>
+                        <div class="col-md-6 hidden-sm hidden-xs">
+                            <img src="img/macBook.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bb-hot">
+    <div class="about-top">
+        <h1><strong>热门课程</strong></h1>
+        <img src="img/star.png" alt="star" class="img-responsive">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-circle img-thumbnail img-responsive" src="img/duck-teacher.fw.png" data-toggle="tooltip" data-placement="bottom" title="鸭老师(面包鸭)">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><strong class="text-danger">【热】</strong> 从零玩转跨平台逼逼大法</h4>
+                        <span class="text-muted">面包鸭老师带你零基础入门逼逼技术，进入逼逼世界，take it easy!</span>
+                    </div>
+                    <div class="media-right"><h5 class="text-danger">303节课</h5></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-circle img-thumbnail img-responsive" src="img/horse-teacher.fw.png" data-toggle="tooltip" data-placement="bottom" title="馬老师(叶硕大师)">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><strong class="text-info">【不太热】</strong> 从零玩转神隐大法</h4>
+                        <span class="text-muted">馬老师带你零基础入门神隐术，成为半自闭半现充，人见人抽的小傻瓜</span>
+                    </div>
+                    <div class="media-right"><h5 class="text-danger">1节课</h5></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-circle img-thumbnail img-responsive" src="img/monkey-teacher.fw.png" data-toggle="tooltip" data-placement="bottom" title="猴老师(复读神猴)">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><strong class="text-danger">【热】</strong> 从零玩转复读术</h4>
+                        <span class="text-muted">复读神猴の看家本领！出来！出来！出来！爬！爬！爬！</span>
+                </div>
+                    <div class="media-right"><h5 class="text-danger">741节课</h5></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-circle img-thumbnail img-responsive" src="img/dog-teacher.fw.png" data-toggle="tooltip" data-placement="bottom" title="狗哥老师(咏春叶硕大弟子)">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><strong class="text-danger">【超热】</strong> 从零玩转抽马术系列！</h4>
+                        <span class="text-muted">面包鸭老师与狗哥老师手把手教你皇家抽馬术，成为抽馬达人！</span>
+                    </div>
+                    <div class="media-right"><h5 class="text-danger">666节课</h5></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-circle img-thumbnail img-responsive" src="img/horse-teacher.fw.png" data-toggle="tooltip" data-placement="bottom" title="馬老师(叶硕大师)">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><strong class="text-danger">【热】</strong> 我抽我自己！</h4>
+                        <span class="text-muted">如何成为一名自尊自律自抽的贤者呢?馬老师给你答案！</span>
+                    </div>
+                    <div class="media-right"><h5 class="text-danger">666节课</h5></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bb-link">
+    <div class="about-top">
+        <h1><strong>友情链接</strong></h1>
+        <img src="img/star.png" alt="star" class="img-responsive">
+    </div>
+    <ul>
+        <li><a href="http://www.llss.live/"><img src="img/airbnb-logo.png"></a></li>
+        <li><a href="http://www.llss.live/"><img src="img/facebook-logo.png"></a></li>
+        <li><a href="http://www.llss.live/"><img src="img/google-logo.png"></a></li>
+        <li><a href="http://www.llss.live/"><img src="img/paypal-logo.png"></a></li>
+        <li><a href="http://www.llss.live/"><img src="img/walmart-logo.png"></a></li>
+        <li><a href="http://www.llss.live/"><img src="img/swift-logo.png"></a></li>
+        <li><a href="http://www.llss.live/"><img src="img/ibm-logo.png"></a></li>
+    </ul>
+</div>
+<div class="bb-bottom hidden-xs hidden-sm">
+    <div class="container">
+        <div class="row">
+            <div class="bb-bottom1 col-md-3 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="http://www.llss.live/">关于我们</a>
+                            <a href="http://www.llss.live/">课程介绍</a>
+                            <a href="http://www.llss.live/">热门课程</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="http://www.llss.live/">名师授课</a>
+                            <a href="http://www.llss.live/">课堂互动</a>
+                            <a href="http://www.llss.live/">联系我们</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="bb-bottom2 col-md-4">
+                <h4>公司地址：逼逼省逼逼市逼逼堂区逼逼城1号</h4>
+                <h4>联系电话：666-2333-233</h4>
+                <h4>邮箱地址：bbSchool@163.com</h4>
+            </div>
+            <div class="bb-bottom3 col-md-3">
+                <span>联系我们：</span>
+                <a href="http://www.llss.live/" data-toggle="tooltip" data-placement="bottom" title="关注我校微信"><img src="img/weixin-h.png"></a>
+                <a href="http://www.llss.live/" data-toggle="tooltip" data-placement="bottom" title="关注我校QQ"><img src="img/xinlang-h.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--模态框-->
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">登录</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="请输入账号(bb堂账号此处通用)" style="display: inline-block;width: 250px">
+                <input type="password" placeholder="请输入密码">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">登录</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">注册</h4>
+            </div>
+            <div class="modal-body">
+                别注册了 乐呵乐呵得了 ヾ(•ω•`)o
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js04.js"></script>
+</html>

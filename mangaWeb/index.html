@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宅男の家</title>
+    <link rel="icon" href="../index-image/bb.gif">
+    <link rel="stylesheet" href="myCss.css">
+    <script src="myJs.js"></script>
+    <script src="Underscore-min.js"></script>
+</head>
+<body>
+<div id="page">
+    <header id="header">
+        <div id="header_seal">
+            <div id="header_left">
+                <ul>
+                    <li></li>
+                    <li><a href="#">番剧</a></li>
+                    <li><a href="#">里番<span id="new">new</span></a></li>
+                    <li><a href="#">漫画</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">活动</a></li>
+                    <li><a href="#">...</a></li>
+                </ul>
+            </div>
+            <div id="header_input"><input type="text" placeholder="搜索你的女神"></div>
+            <div id="header_right">
+                <a href="#">注册</a>
+                <a href="#">登录</a>
+            </div>
+        </div>
+    </header>
+    <div id="slider">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div id="quick_login">
+        <div id="quick_login_left">
+            <span id="quick_login_title">BB堂内最优秀的动漫网站</span>
+            <span>已有超过百分之八十的B堂群众用此网站追自己喜欢的番剧与漫画</span>
+        </div>
+        <div id="quick_login_right">
+            <ul>
+                <li><a href="https://www.sina.com.cn/"></a></li>
+                <li><a href="http://www.renren.com/"></a></li>
+                <li><a href="https://www.docin.com/"></a></li>
+                <li><a href="https://im.qq.com/"></a></li>
+            </ul>
+            <div id="quick_login_right_text">
+                <div></div>
+                <div>用以上社交帐号直接登录</div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="quick_login_mobile">
+        <div id="login_mobile_left">
+            <h3>BB堂内最优秀的动漫网站</h3>
+            <p>超过百分之八十B堂群众喜爱此站</p>
+        </div>
+        <div id="login_mobile_right">
+            <ul>
+                <li>用社交帐号直接登录：</li>
+                <li><a href="https://im.qq.com/"></a></li>
+                <li><a href="https://wx.qq.com/"></a></li>
+                <li><a href="https://www.docin.com/"></a></li>
+                <li><a href="http://www.renren.com/"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="middle_title">
+        <div id="middle_title_in">
+            <span></span>
+            <span>宅男の家</span>
+            <span></span>
+        </div>
+    </div>
+    <div id="tab">
+        <div id="tab_title">
+            <ul>
+                <li class="selected">美图</li>
+                <li>漫画</li>
+                <li>番剧</li>
+            </ul>
+        </div>
+        <div id="tab_content">
+            <ul>
+                <li>
+                    <a href="p1.jpg" title="V家无限娇"></a>
+                    <a href="p2.jpg" title="东方大法好"></a>
+                    <a href="p3.jpg" title="艾米莉亚碳"></a>
+                    <a href="p4.jpg" title="阿伟死了"></a>
+                    <a href="p5.jpg" title="愤怒的小♂鸭"></a>
+                    <a href="p6.jpg" title="逼逼堂五人众"></a>
+                </li>
+                <li id="manga">
+                </li>
+                <li id="anime">
+                    <ul>
+                        <span></span>
+                        <li><img src="haha.jpg" alt=""><img src="haha.jpg" alt=""><img src="haha.jpg" alt=""></li>
+                        <li>此处无东西</li>
+                        <li><img src="haha2.jpg" alt=""><img src="haha2.jpg" alt=""></li>
+                        <li>老铁们，俺懒得做了</li>
+                        <li><img src="haha3.jpg" alt=""></li>
+                        <li>追番请转<a href="https://www.bilibili.com/">哔哩哔哩</a>或<a
+                                href="http://www.dilidili.name/">嘀哩嘀哩</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="elevator"></div>
+    <div id="login">
+        <div id="loginPanel">
+            <img src="Sign.png" alt="">
+            <input type="text" placeholder="输入账号/手机号/邮箱">
+            <input type="password" placeholder="密码">
+            <h1>登录</h1>
+            <div>还没有逼逼堂账号？<a href="#" id="login_register">点击注册»</a></div>
+            <div id="loginPanel_close"></div>
+        </div>
+    </div>
+    <div id="register">
+        <div id="registerPanel">
+            <fieldset>
+                <legend>用户基本信息</legend>
+                <span style="color: red">*</span>用户名：<input type="text"><span
+                    style="color: red; font-size: 1rem">请输入用户名</span><br><br>
+                <span style="color: red">*</span>密&nbsp;&nbsp; 码：<input type="password"><span
+                    style="color: red; font-size: 1rem">请输入密码</span>
+                <br>
+                您的性别是？<input type="radio" name="gender">宅男
+                <input type="radio" name="gender">萌妹
+                <input type="radio" name="gender">扶她
+                <br><br>
+
+                您的爱好有？<input type="checkbox" checked="checked">逼逼
+                <input type="checkbox">打飞机
+                <input type="checkbox">补番
+                <input type="checkbox">网游
+                <input type="checkbox">单机游戏
+                <input type="checkbox">电影
+                <br><br>
+                您的住址？ <select>
+                <option value="">---请选择---</option>
+                <option value="">北京</option>
+                <option value="">保定</option>
+                <option value="">火星</option>
+                <option value="">二次元</option>
+            </select>
+                <select>
+                    <option>---请选择---</option>
+                    <optgroup label="北京">
+                        <option>朝阳区</option>
+                        <option>海淀区</option>
+                        <option>丰台区</option>
+                    </optgroup>
+                    <optgroup label="保定">
+                        <option>竞秀区</option>
+                        <option>莲池区</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>其他信息</legend>
+                您最喜欢的BB堂干部是？
+                <select>
+                    <option value="">面包鸭</option>
+                    <option value="">狗哥</option>
+                    <option value="">叶硕大师</option>
+                    <option value="">复读神猴</option>
+                    <option value="">猪娃子</option>
+                </select>
+                <br>
+                您的外号？<input type="text">
+                <br>
+                您的照片（需上传一张）：<input type="file" name="photo">
+                <br>
+            </fieldset>
+            <h1>立即注册</h1>
+            <div id="registerPanel_close"></div></div>
+        </div>
+</div>
+</body>
+</html>

@@ -1,14 +1,55 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>导航页</title>
+    <title>BB堂导航</title>
+    <link rel="icon" href="index-image/bb.gif">
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            list-style: none;
+        }
         body{
             background-color: #000;
         }
+        #box{
+            width: 1200px;
+            height: 460px;
+            margin: 100px auto;
+            position: relative;
+        }
+        img{
+            width: 800px;
+            height: 300px;
+            position: absolute;
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        #pre, #next{
+            width: 76px;
+            height: 112px;
+            margin-top: -56px;
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            z-index: 99;
+        }
+        #pre{
+            background: url("index-image/prev.png") no-repeat;
+            left: 0;
+        }
+        #next{
+            background: url("index-image/next.png") no-repeat;
+            right: 0;
+        }
+        #ctrl{
+            opacity: 0;
+        }
         span{
-            background:  url("image/star.png")  no-repeat;
+            background:  url("index-image/star.png")  no-repeat;
             background-size: 100% 100%;
             width: 60px;
             height: 60px;
@@ -38,53 +79,41 @@
     </style>
 </head>
 <body>
-</body>
+<div id="box">
+    <div id="img">
+        <img src="index-image/1.jpg" id="img1">
+        <img src="index-image/2.jpg" id="img2">
+        <img src="index-image/3.jpg" id="img3">
+        <img src="index-image/4.jpg" id="img4">
+        <img src="index-image/5.jpg" id="img5">
+    </div>
+    <div id="ctrl">
+        <div id="pre"></div>
+        <div id="next"></div>
+    </div>
+    
+</div>
+<script src="index-js/JS.js"></script>
 <script>
+    //星星海的特效
     var width=document.documentElement.clientWidth;
     var height=document.documentElement.clientHeight;
-    console.log(width);
-    console.log(height);
-    for (var i=0;i<100;i++){
-    var span=document.createElement('span');
-    var x=Math.random()*width;
-    var y=Math.random()*height;
-    var scale=Math.random();
-    var delay=Math.random()*1.5;
-    span.style.left=x+'px';
-    span.style.top=y+'px';
-    span.style.transform='scale('+scale+')';
-    span.style.animationDelay=delay+'s';
-    document.body.append(span);
+
+    for (var i=0;i<50;i++){
+        var span=document.createElement('span');
+        var x=Math.random()*width;
+        var y=Math.random()*height;
+        var scale=Math.random();
+        var delay=Math.random()*1.5;
+        span.style.left=x+'px';
+        span.style.top=y+'px';
+        span.style.transform='scale('+scale+')';
+        span.style.animationDelay=delay+'s';
+        document.body.append(span);
     }
-    var a=document.createElement('a');
-    var b=document.createElement('a');
-    a.innerText='BB堂';
-    b.innerText='法苏小天使';
-    a.href='https://breadduck.github.io/BB-malaihouchu/';
-    b.href='fasu.html';
-    var num=Math.random()*0.6;
-    var num2=Math.random()*0.8;
-    var dis=num*200;
-    var dis2=num2*200;
-    a.style.left=dis+'px';
-    a.style.top=num*height+'px';
-    b.style.left=dis2+'px';
-    b.style.top=num2*height+'px';
-    document.body.append(a,b);
-    timer= setInterval(function () {
-    dis+=5;
-    if (dis>(width-300)){
-    clearInterval(timer);
-    }
-    a.style.left=dis+'px';
-    },100);
-    timer2= setInterval(function () {
-        dis2+=4;
-        if (dis>(width-300)){
-            clearInterval(timer2);
-        }
-        b.style.left=dis2+'px';
-    },100);
+
+
 
 </script>
+</body>
 </html>
